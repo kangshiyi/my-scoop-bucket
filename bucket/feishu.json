@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://lf26-ug-sign.feishucdn.com/ee-appcenter/b829f649/Feishu-win32_x64-7.50.9-signed.exe?lk3s=fb957577&x-expires=1756111160&x-signature=gQILtP63%2FJtE6CrF%2FfQbi%2FRZg5c%3D",
+            "url": "http://localhost:8000/Feishu-win32_x64-7.50.9-signed.exe",
             "hash": "8464E7FA204E84B5B0EABDFC7932B20AC4D37AF838E48303A289E71AD270467D"
         }
     },
