@@ -1,0 +1,35 @@
+{
+    "version": "7.50.9", // 替换为飞书的实际版本号
+    "description": "飞书 - 新一代企业协作平台",
+    "homepage": "https://www.feishu.cn/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.feishu.cn/terms"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/Feishu-win32_x64-7.50.9-signed.exe",
+            "hash": "8464E7FA204E84B5B0EABDFC7932B20AC4D37AF838E48303A289E71AD270467D"
+        }
+    },
+    "installer": {
+        "args": "/S"
+    },
+    "shortcuts": [
+        [
+            "feishu.exe",
+            "飞书"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.feishu.cn/api/downloads/version",
+        "jsonpath": "$.windows.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/Feishu-win32_x64-$version-signed.exe"
+            }
+        }
+    }
+}
